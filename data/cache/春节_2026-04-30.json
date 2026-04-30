@@ -1,0 +1,274 @@
+{
+  "广东": {
+    "positive": 160519,
+    "negative": 125255,
+    "neutral": 3,
+    "total": 285777,
+    "emotion_index": 0.123,
+    "dominant_emotion": "neutral"
+  },
+  "山东": {
+    "positive": 123334,
+    "negative": 99857,
+    "neutral": 3,
+    "total": 223194,
+    "emotion_index": 0.105,
+    "dominant_emotion": "neutral"
+  },
+  "河南": {
+    "positive": 108098,
+    "negative": 93030,
+    "neutral": 15421,
+    "total": 216549,
+    "emotion_index": 0.07,
+    "dominant_emotion": "neutral"
+  },
+  "江苏": {
+    "positive": 79433,
+    "negative": 80296,
+    "neutral": 29574,
+    "total": 189303,
+    "emotion_index": -0.005,
+    "dominant_emotion": "neutral"
+  },
+  "四川": {
+    "positive": 82099,
+    "negative": 101670,
+    "neutral": 1091,
+    "total": 184860,
+    "emotion_index": -0.106,
+    "dominant_emotion": "neutral"
+  },
+  "河北": {
+    "positive": 75029,
+    "negative": 79437,
+    "neutral": 8970,
+    "total": 163436,
+    "emotion_index": -0.027,
+    "dominant_emotion": "neutral"
+  },
+  "浙江": {
+    "positive": 60410,
+    "negative": 87988,
+    "neutral": 525,
+    "total": 148923,
+    "emotion_index": -0.185,
+    "dominant_emotion": "neutral"
+  },
+  "湖南": {
+    "positive": 75313,
+    "negative": 68962,
+    "neutral": 3,
+    "total": 144278,
+    "emotion_index": 0.044,
+    "dominant_emotion": "neutral"
+  },
+  "安徽": {
+    "positive": 61723,
+    "negative": 54942,
+    "neutral": 18502,
+    "total": 135167,
+    "emotion_index": 0.05,
+    "dominant_emotion": "neutral"
+  },
+  "湖北": {
+    "positive": 63747,
+    "negative": 62177,
+    "neutral": 3220,
+    "total": 129144,
+    "emotion_index": 0.012,
+    "dominant_emotion": "neutral"
+  },
+  "广西": {
+    "positive": 48712,
+    "negative": 59849,
+    "neutral": 2315,
+    "total": 110876,
+    "emotion_index": -0.1,
+    "dominant_emotion": "neutral"
+  },
+  "云南": {
+    "positive": 49844,
+    "negative": 52931,
+    "neutral": 434,
+    "total": 103209,
+    "emotion_index": -0.03,
+    "dominant_emotion": "neutral"
+  },
+  "江西": {
+    "positive": 43809,
+    "negative": 55618,
+    "neutral": 3,
+    "total": 99430,
+    "emotion_index": -0.119,
+    "dominant_emotion": "neutral"
+  },
+  "福建": {
+    "positive": 40291,
+    "negative": 51724,
+    "neutral": 1104,
+    "total": 93119,
+    "emotion_index": -0.123,
+    "dominant_emotion": "neutral"
+  },
+  "辽宁": {
+    "positive": 49386,
+    "negative": 42420,
+    "neutral": 1,
+    "total": 91807,
+    "emotion_index": 0.076,
+    "dominant_emotion": "neutral"
+  },
+  "陕西": {
+    "positive": 39860,
+    "negative": 47611,
+    "neutral": 4,
+    "total": 87475,
+    "emotion_index": -0.089,
+    "dominant_emotion": "neutral"
+  },
+  "贵州": {
+    "positive": 38202,
+    "negative": 47514,
+    "neutral": 3,
+    "total": 85719,
+    "emotion_index": -0.109,
+    "dominant_emotion": "neutral"
+  },
+  "山西": {
+    "positive": 39618,
+    "negative": 32321,
+    "neutral": 4154,
+    "total": 76093,
+    "emotion_index": 0.096,
+    "dominant_emotion": "neutral"
+  },
+  "重庆": {
+    "positive": 31608,
+    "negative": 37692,
+    "neutral": 1529,
+    "total": 70829,
+    "emotion_index": -0.086,
+    "dominant_emotion": "neutral"
+  },
+  "黑龙江": {
+    "positive": 34961,
+    "negative": 31731,
+    "neutral": 3,
+    "total": 66695,
+    "emotion_index": 0.048,
+    "dominant_emotion": "neutral"
+  },
+  "新疆": {
+    "positive": 24439,
+    "negative": 34207,
+    "neutral": 4,
+    "total": 58650,
+    "emotion_index": -0.167,
+    "dominant_emotion": "neutral"
+  },
+  "上海": {
+    "positive": 26034,
+    "negative": 29192,
+    "neutral": 5,
+    "total": 55231,
+    "emotion_index": -0.057,
+    "dominant_emotion": "neutral"
+  },
+  "甘肃": {
+    "positive": 23846,
+    "negative": 30445,
+    "neutral": 3,
+    "total": 54294,
+    "emotion_index": -0.122,
+    "dominant_emotion": "neutral"
+  },
+  "内蒙古": {
+    "positive": 25647,
+    "negative": 26248,
+    "neutral": 867,
+    "total": 52762,
+    "emotion_index": -0.011,
+    "dominant_emotion": "neutral"
+  },
+  "吉林": {
+    "positive": 22166,
+    "negative": 22301,
+    "neutral": 6583,
+    "total": 51050,
+    "emotion_index": -0.003,
+    "dominant_emotion": "neutral"
+  },
+  "北京": {
+    "positive": 23137,
+    "negative": 25310,
+    "neutral": 1,
+    "total": 48448,
+    "emotion_index": -0.045,
+    "dominant_emotion": "neutral"
+  },
+  "天津": {
+    "positive": 16512,
+    "negative": 12694,
+    "neutral": 1088,
+    "total": 30294,
+    "emotion_index": 0.126,
+    "dominant_emotion": "neutral"
+  },
+  "海南": {
+    "positive": 10451,
+    "negative": 10246,
+    "neutral": 2751,
+    "total": 23448,
+    "emotion_index": 0.009,
+    "dominant_emotion": "neutral"
+  },
+  "宁夏": {
+    "positive": 7031,
+    "negative": 7259,
+    "neutral": 1980,
+    "total": 16270,
+    "emotion_index": -0.014,
+    "dominant_emotion": "neutral"
+  },
+  "青海": {
+    "positive": 6728,
+    "negative": 6429,
+    "neutral": 2,
+    "total": 13159,
+    "emotion_index": 0.023,
+    "dominant_emotion": "neutral"
+  },
+  "西藏": {
+    "positive": 4082,
+    "negative": 4228,
+    "neutral": 4,
+    "total": 8314,
+    "emotion_index": -0.018,
+    "dominant_emotion": "neutral"
+  },
+  "台湾": {
+    "positive": 21452,
+    "negative": 30327,
+    "neutral": 1,
+    "total": 51780,
+    "emotion_index": -0.171,
+    "dominant_emotion": "neutral"
+  },
+  "香港": {
+    "positive": 6563,
+    "negative": 7181,
+    "neutral": 2345,
+    "total": 16089,
+    "emotion_index": -0.038,
+    "dominant_emotion": "neutral"
+  },
+  "澳门": {
+    "positive": 713,
+    "negative": 819,
+    "neutral": 1,
+    "total": 1533,
+    "emotion_index": -0.069,
+    "dominant_emotion": "neutral"
+  }
+}

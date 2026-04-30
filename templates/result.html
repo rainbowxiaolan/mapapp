@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分析结果 - {{ topic }} | 微博热点话题情绪地图</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>微博热点话题情绪地图</h1>
+            <p class="subtitle">基于情感分析的地理可视化系统</p>
+        </header>
+
+        <main>
+            <div class="back-section">
+                <a href="/" class="btn-back">← 返回首页</a>
+            </div>
+
+            <div class="topic-section">
+                <h2>分析话题：{{ topic }}</h2>
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">微博总数</span>
+                        <span class="stat-value">{{ summary.total_records }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">覆盖省份</span>
+                        <span class="stat-value">{{ summary.province_count }}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">整体主导情绪</span>
+                        <span class="stat-value stat-emotion-{{ summary.overall_dominant_emotion }}">
+                            {% if summary.overall_dominant_emotion == 'positive' %}正向{% elif summary.overall_dominant_emotion == 'negative' %}负向{% else %}中性{% endif %}
+                        </span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">整体情绪指数</span>
+                        <span class="stat-value">{{ summary.overall_emotion_index }}</span>
+                    </div>
+                </div>
+            </div>
+
+	{% if ai_summary %}
+	<div class="ai-summary-section" style="background:#f0f7ff; border-left:4px solid #667eea; 	padding:15px; margin:20px 0;">
+	    <h4 style="margin-top:0;">AI 智能解读</h4>
+	    <p style="margin-bottom:0;">{{ ai_summary }}</p>
+	</div>
+	{% endif %}
+
+            <div class="map-section">
+                <h3>情绪分布地图</h3>
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <span class="legend-color legend-positive"></span>
+                        <span>正向情绪</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-negative"></span>
+                        <span>负向情绪</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-neutral"></span>
+                        <span>中性情绪</span>
+                    </div>
+                </div>
+                <div class="map-container">
+                    {{ map_html|safe }}
+                </div>
+            </div>
+
+            {% if error_message %}
+            <div class="error-section">
+                <div class="error-message">
+                    <h4>⚠️ 提示</h4>
+                    <p>{{ error_message }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </main>
+
+        <footer>
+            <p>&copy; 2026 微博热点话题情绪地图系统 | 本科毕业设计项目</p>
+        </footer>
+    </div>
+
+<div id="beijing-time" style="text-align:center; color:#555; font-size:14px; margin:10px 0;"></div>
+<script>
+    function updateTime() {
+        var now = new Date();
+        var beijing = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Shanghai"}));
+        var str = beijing.getFullYear() + '-' + 
+                  String(beijing.getMonth()+1).padStart(2,'0') + '-' + 
+                  String(beijing.getDate()).padStart(2,'0') + ' ' +
+                  String(beijing.getHours()).padStart(2,'0') + ':' +
+                  String(beijing.getMinutes()).padStart(2,'0') + ':' +
+                  String(beijing.getSeconds()).padStart(2,'0');
+        document.getElementById('beijing-time').textContent = '北京时间：' + str;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
+
+</body>
+</html>

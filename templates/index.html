@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微博热点话题情绪地图</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>微博热点话题情绪地图</h1>
+            <p class="subtitle">基于情感分析的地理可视化系统</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <h2>分析热点话题</h2>
+                <form id="searchForm" class="search-form" action="/analyze" method="POST">
+    <div class="form-group">
+        <label for="topic">请输入微博热点话题：</label>
+        <input type="text" id="topic" name="topic" placeholder="例如：春节、世界杯、高考" required autofocus>
+    </div>
+    <div class="suggestions">
+        <p>热门话题推荐：</p>
+        <div class="topic-tags">
+            <a href="#" class="topic-tag" data-topic="春节">春节</a>
+            <a href="#" class="topic-tag" data-topic="世界杯">世界杯</a>
+            <a href="#" class="topic-tag" data-topic="高考">高考</a>
+            <a href="#" class="topic-tag" data-topic="双11">双11</a>
+            <a href="#" class="topic-tag" data-topic="春节旅游">春节旅游</a>
+        </div>
+    </div>
+    <button type="submit" class="btn-submit">开始分析</button>
+</form>
+            </div>
+
+            <div class="info-section">
+                <h3>系统说明</h3>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">📊</div>
+                        <h4>数据采集</h4>
+                        <p>获取微博热点话题相关数据，清洗预处理</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🧠</div>
+                        <h4>情感分析</h4>
+                        <p>对微博文本进行情感倾向分析，识别正向、负向、中性情绪</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🗺️</div>
+                        <h4>地理可视化</h4>
+                        <p>按地区聚合统计，在中国地图上展示情绪分布</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 加载动画（默认隐藏） -->
+            <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+                <div class="loading-container">
+                    <div class="loading-spinner"></div>
+                    <div class="loading-text">正在分析数据中...</div>
+                    <div class="loading-steps">
+                        <div class="loading-step active">
+                            <span class="step-number">1</span>
+                            <span class="step-desc">获取微博数据</span>
+                        </div>
+                        <div class="loading-step">
+                            <span class="step-number">2</span>
+                            <span class="step-desc">数据清洗</span>
+                        </div>
+                        <div class="loading-step">
+                            <span class="step-number">3</span>
+                            <span class="step-desc">情感分析</span>
+                        </div>
+                        <div class="loading-step">
+                            <span class="step-number">4</span>
+                            <span class="step-desc">生成地图</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 微博热点话题情绪地图系统 | 本科毕业设计项目</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
