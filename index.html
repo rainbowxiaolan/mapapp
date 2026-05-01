@@ -17,23 +17,26 @@
             <div class="search-section">
                 <h2>分析热点话题</h2>
                 <form id="searchForm" class="search-form" action="/analyze" method="POST">
-    <div class="form-group">
-        <label for="topic">请输入微博热点话题：</label>
-        <input type="text" id="topic" name="topic" placeholder="例如：春节、世界杯、高考" required autofocus>
-    </div>
-    <div class="suggestions">
-        <p>热门话题推荐：</p>
-        <div class="topic-tags">
-            <a href="#" class="topic-tag" data-topic="春节">春节</a>
-            <a href="#" class="topic-tag" data-topic="世界杯">世界杯</a>
-            <a href="#" class="topic-tag" data-topic="高考">高考</a>
-            <a href="#" class="topic-tag" data-topic="双11">双11</a>
-            <a href="#" class="topic-tag" data-topic="春节旅游">春节旅游</a>
-        </div>
-    </div>
-    <button type="submit" class="btn-submit">开始分析</button>
-</form>
+                    <div class="form-group">
+                        <label for="topic">请输入微博热点话题：</label>
+                        <input type="text" id="topic" name="topic" placeholder="例如：春节、世界杯、高考" required autofocus>
+                    </div>
+                    <div class="suggestions">
+                        <p>热门话题推荐：</p>
+                        <div class="topic-tags">
+                            <a href="#" class="topic-tag" data-topic="春节">春节</a>
+                            <a href="#" class="topic-tag" data-topic="世界杯">世界杯</a>
+                            <a href="#" class="topic-tag" data-topic="高考">高考</a>
+                            <a href="#" class="topic-tag" data-topic="双11">双11</a>
+                            <a href="#" class="topic-tag" data-topic="春节旅游">春节旅游</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">开始分析</button>
+                </form>
             </div>
+
+            <!-- 结果展示区域 -->
+            <div id="resultArea"></div>
 
             <div class="info-section">
                 <h3>系统说明</h3>
@@ -55,39 +58,16 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 加载动画（默认隐藏） -->
-            <div id="loadingOverlay" class="loading-overlay" style="display: none;">
-                <div class="loading-container">
-                    <div class="loading-spinner"></div>
-                    <div class="loading-text">正在分析数据中...</div>
-                    <div class="loading-steps">
-                        <div class="loading-step active">
-                            <span class="step-number">1</span>
-                            <span class="step-desc">获取微博数据</span>
-                        </div>
-                        <div class="loading-step">
-                            <span class="step-number">2</span>
-                            <span class="step-desc">数据清洗</span>
-                        </div>
-                        <div class="loading-step">
-                            <span class="step-number">3</span>
-                            <span class="step-desc">情感分析</span>
-                        </div>
-                        <div class="loading-step">
-                            <span class="step-number">4</span>
-                            <span class="step-desc">生成地图</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
 
         <footer>
-            <p>&copy; 2024 微博热点话题情绪地图系统 | 本科毕业设计项目</p>
+            <p>&copy; 2026 微博热点话题情绪地图系统 | 本科毕业设计项目</p>
         </footer>
     </div>
 
+    <!-- CDN 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <!-- 前端交互脚本 -->
     <script src="/static/js/main.js"></script>
 </body>
 </html>
